@@ -1,0 +1,23 @@
+{
+  "name": "auto-atendimento-whats",
+  "version": "0.1.0",
+  "description": "Bot de WhatsApp para lojas online: triagem inicial por menu e avisos automáticos de status de pedido. Roda no seu próprio PC.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "pedido": "node --disable-warning=ExperimentalWarning src/cli-pedido.js",
+    "conferir": "node src/conferir.js",
+    "test": "node --disable-warning=ExperimentalWarning --test"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "keywords": ["whatsapp", "bot", "baileys", "ecommerce", "nuvemshop", "atendimento"],
+  "license": "MIT",
+  "dependencies": {
+    "baileys": "7.0.0-rc14",
+    "pino": "^9.0.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

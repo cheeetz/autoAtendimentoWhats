@@ -1,0 +1,11 @@
+node_modules/
+.env
+# sessão do WhatsApp (equivale a estar logado no número — nunca publique)
+auth/
+# banco local com dados de clientes e pedidos
+data/
+# configuração da sua loja (copie de config/bot.example.json)
+config/bot.json
+*.log
+# fotos dos seus produtos
+config/fotos/

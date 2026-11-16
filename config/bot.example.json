@@ -1,0 +1,98 @@
+{
+  "loja": "Minha Loja",
+  "sessao_minutos": 15,
+  "pausa_atendente_horas": 12,
+  "modo_teste": {
+    "ativo": false,
+    "numeros": []
+  },
+  "menu": {
+    "saudacao": "Olá! Aqui é o atendimento da {loja}. Responda com o número da opção:",
+    "opcoes": [
+      {
+        "tecla": "1",
+        "titulo": "Comprar",
+        "tipo": "catalogo"
+      },
+      {
+        "tecla": "2",
+        "titulo": "Status do meu pedido",
+        "tipo": "pedido"
+      },
+      {
+        "tecla": "3",
+        "titulo": "Trocas e devoluções",
+        "tipo": "texto",
+        "resposta": "Você pode pedir troca ou devolução em até 7 dias após o recebimento. Envie o número do pedido e o motivo que um atendente continua por aqui."
+      },
+      {
+        "tecla": "4",
+        "titulo": "Prazo e frete",
+        "tipo": "texto",
+        "resposta": "O prazo e o valor do frete aparecem no carrinho ao informar o CEP. Postamos em até 2 dias úteis após o pagamento."
+      },
+      {
+        "tecla": "5",
+        "titulo": "Falar com atendente",
+        "tipo": "atendente"
+      }
+    ],
+    "voltar": {
+      "tecla": "0",
+      "texto": "0 - Voltar ao início"
+    },
+    "invalida": "Não entendi. Responda só com o número de uma das opções.",
+    "atendente": "Certo! Um atendente vai responder por aqui assim que possível.",
+    "encerramento": "Atendimento encerrado por falta de interação. Quando precisar, é só mandar uma mensagem.",
+    "pedir_numero_pedido": "Não achei pedido neste telefone. Qual é o número do pedido?",
+    "pedido_nao_encontrado": "Não encontrei esse pedido. Vou chamar um atendente para verificar.",
+    "pedido_status": "Pedido #{numero}\nPagamento: {pagamento}\nEnvio: {envio}{rastreio_linha}"
+  },
+  "catalogo": {
+    "titulo": "Escolha um produto:",
+    "produto": "*{nome}*\n{descricao}\n\n{preco}",
+    "comprar_link": "Para finalizar a compra de {nome} ({preco}), acesse:\n{link}",
+    "comprar_pix": "Pix de {nome} ({preco}). O código copia e cola vai na próxima mensagem:",
+    "depois_da_compra": "Qualquer dúvida no pagamento, é só chamar por aqui.",
+    "pedir_dados": true,
+    "endereco_por_cep": true,
+    "pedido_registrado": "Pedido #{numero} registrado! Avisamos por aqui a cada atualização.",
+    "produtos": [
+      {
+        "nome": "Produto A",
+        "descricao": "Descrição do produto A.",
+        "preco": "R$ 200,00",
+        "foto": "config/fotos/produto-a.jpg",
+        "link": "https://minhaloja.com.br/produtos/produto-a"
+      },
+      {
+        "nome": "Produto B",
+        "descricao": "Descrição do produto B.",
+        "preco": "R$ 150,00",
+        "pix": "COLE-AQUI-O-CODIGO-PIX-COPIA-E-COLA"
+      },
+      {
+        "nome": "Produto C",
+        "descricao": "Descrição do produto C. Sem link nem Pix: a compra vai para um atendente.",
+        "preco": "R$ 90,00"
+      }
+    ]
+  },
+  "notificacoes": {
+    "horario_envio": [
+      8,
+      21
+    ],
+    "intervalo_segundos": [
+      8,
+      20
+    ],
+    "mensagens": {
+      "pedido_recebido": "Olá, {nome}! Recebemos seu pedido #{numero} na {loja}. Avisamos por aqui a cada atualização.",
+      "pagamento_aprovado": "{nome}, o pagamento do pedido #{numero} foi aprovado. Já estamos separando.",
+      "pedido_enviado": "{nome}, seu pedido #{numero} foi enviado!{rastreio_linha}",
+      "pedido_entregue": "{nome}, o pedido #{numero} consta como entregue. Qualquer problema, é só responder aqui.",
+      "pedido_cancelado": "{nome}, o pedido #{numero} foi cancelado. Se tiver dúvida, responda esta mensagem."
+    }
+  }
+}
